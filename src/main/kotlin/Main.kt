@@ -3,9 +3,22 @@ import kotlinx.coroutines.runBlocking
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-private const val REQUEST_COUNT = 3
 private const val BASE_URL = "https://cat-match.easygame2021.com/sheep/v1/game/"
+
+/**
+ * 通关次数
+ */
+private const val REQUEST_COUNT = 3
+
+/**
+ * 通关间隔毫秒数
+ */
 private const val REQUEST_INTERVAL_TIME = 3000L
+
+/**
+ * 通关用时,单位秒
+ */
+private const val COMPLETE_TIME = 1 * 60
 
 private val api by lazy {
     Retrofit.Builder()
@@ -38,8 +51,7 @@ fun main(args: Array<String>) {
 }
 
 private suspend fun endGame(t: String) {
-    val endTime = 1 * 60
-    val responseData = api.endGame(endTime, t)
+    val responseData = api.endGame(COMPLETE_TIME, t)
     if (responseData.err_code == 0) {
         println("闯关成功!")
     } else {
