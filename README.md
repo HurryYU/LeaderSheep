@@ -17,7 +17,7 @@
 
 ### 3.2、运行jar包
 
-您可以直接下载jar包，使用命令`java -jar leader_sheep.jar t值`执行。示例：`java -jar leader_sheep.jar eyJhbGciOiJIUzI1NiIsInR5c...`。
+您可以前往[release](https://github.com/HurryYU/LeaderSheep/releases/)下载jar包，使用命令`java -jar leader_sheep.jar t值`执行。示例：`java -jar leader_sheep.jar eyJhbGciOiJIUzI1NiIsInR5c...`。
 
 ## 四、更多配置
 
