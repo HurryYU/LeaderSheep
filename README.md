@@ -13,7 +13,7 @@
 
 您可以`clone`本项目，直接在IDEA中打开，在运行前，请一定记得配置`Program arguments`，内容为您抓取到的`t`对应的value，如果您不清楚在IDEA中如何配置`Program arguments`，可自行查阅相关文章 。
 
-![image-20220918002057497](img\image-20220918002057497.png)
+![image-20220918002057497](img/image-20220918002057497.png)
 
 ### 3.2、运行jar包
 
