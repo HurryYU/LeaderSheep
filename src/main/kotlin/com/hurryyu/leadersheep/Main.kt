@@ -1,3 +1,5 @@
+package com.hurryyu.leadersheep
+
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 import retrofit2.Retrofit
@@ -46,6 +48,7 @@ fun main(args: Array<String>) {
                 }
                 currentCount++
             }
+            println("闯关已经全部完成!")
         }
     } ?: print("请携带 t 参数使用")
 }
